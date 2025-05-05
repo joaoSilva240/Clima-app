@@ -32,7 +32,7 @@ export default function App() {
     }
     buscaPelaCidade()
   }
-    , [cidade])
+    ,[cidade])
 
   useEffect(() => {
     if (!coordenadas) return
