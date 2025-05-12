@@ -1,4 +1,4 @@
-import { Snowflake, Sun, Thermometer } from 'lucide-react'
+import { Snowflake, Sun, Thermometer, Wind, CloudRain } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
 import './App.css'
@@ -136,8 +136,8 @@ export default function App() {
       <div className='m-auto text-8xl'>{dados?.temperatura}C° </div>
       <div>{horaAtual}</div>
       <div className='flex gap-10 text-2xl'>
-        <div className='border rounded-md p-5'>{dados?.umidade}</div>
-        <div className='border rounded-md p-5'>{dados?.vento}</div>
+        <div className='gap-3 flex items-center border rounded-md p-5'>{dados?.umidade} <CloudRain/> </div>
+        <div className='gap-3 flex items-center border rounded-md p-5'>{dados?.vento} <Wind/></div>
       </div>
       <button onClick={() => handleNewWeather()} className='p-3 bg-black rounded-4xl' style={{ color: climaAtual.bgColor }} type="submit">clique aqui</button>
 
