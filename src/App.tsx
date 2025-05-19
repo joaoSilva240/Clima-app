@@ -39,6 +39,7 @@ export default function App() {
     }
   }
 
+
   async function buscarClima(latitude?: string, longitude?: string) {
     if (!latitude || !longitude) {
       console.error("Latitude ou longitude inválidas.");
